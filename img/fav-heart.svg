@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="fav-heart" transform="translate(-1048 -1580)">
+    <rect id="長方形_63" data-name="長方形 63" width="20" height="20" rx="4" transform="translate(1048 1580)" fill="#3b2a1c"/>
+    <path id="heart-solid" d="M12.629,32.8a3.739,3.739,0,0,0-5.1.372l-.539.555-.539-.555a3.739,3.739,0,0,0-5.1-.372,3.926,3.926,0,0,0-.271,5.685l5.291,5.463a.857.857,0,0,0,1.239,0L12.9,38.489a3.924,3.924,0,0,0-.268-5.685Z" transform="translate(1051.012 1551.652)" fill="#f7eddc"/>
+  </g>
+</svg>

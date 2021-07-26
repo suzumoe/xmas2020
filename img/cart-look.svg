@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21.958" height="20" viewBox="0 0 21.958 20">
+  <g id="cart-look" transform="translate(-1254.042 -90)">
+    <path id="shopping-cart-solid" d="M14.593,8.326,15.9,2.579a.663.663,0,0,0-.647-.81H4.4L4.146.53A.663.663,0,0,0,3.5,0H.663A.663.663,0,0,0,0,.663v.442a.663.663,0,0,0,.663.663H2.594l1.941,9.49a1.548,1.548,0,1,0,1.853.237h5.793a1.547,1.547,0,1,0,1.757-.288l.152-.671a.663.663,0,0,0-.647-.81H6.027l-.181-.884h8.1A.663.663,0,0,0,14.593,8.326Z" transform="translate(1254.042 95.852)" fill="#3b2a1c"/>
+    <g id="グループ_145" data-name="グループ 145">
+      <circle id="楕円形_439" data-name="楕円形 439" cx="6" cy="6" r="6" transform="translate(1264 90)" fill="#af0e2c"/>
+      <text id="_2" data-name="2" transform="translate(1270 98)" fill="#f7eddc" font-size="6" font-family="Kan415TyposStd-Regular, Kan415Typos Std"><tspan x="-1.968" y="0">2</tspan></text>
+    </g>
+  </g>
+</svg>
