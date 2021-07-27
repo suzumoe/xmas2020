@@ -1,4 +1,7 @@
 // bsのオーバーライドスタイル
+hr:not([size]) {
+  height: 8px !important;
+}
 
 // bootstrap本体を読み込み
 @import 'bootstrap/bootstrap';

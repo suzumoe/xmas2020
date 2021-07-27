@@ -9,6 +9,9 @@
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     referrerpolicy="no-referrer" />
+  <!-- adobe font -->
+  <link rel="stylesheet" href="https://use.typekit.net/xkh1elt.css">
+  <!-- my style -->
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -16,18 +19,24 @@
 
   <main>
     <section class="main-visual">
-      <img src="img/mv.png" alt="">
-      <img src="img/mv-logo.svg" alt="">
-      <img src="img/mv-line.svg" alt="">
-      <img src="img/top-read.svg" alt="">
+
+      <picture class="mv-picture">
+        <source srcset="img/mv-pc.png" media="(min-width:768px)">
+        <source srcset="img/mv-sp.jpg">
+        <img src="img/mv.png" alt="">
+      </picture>
+
+      <img src="img/mv-logo.svg" alt="" class="mv-logo">
+      <img src="img/mv-line.svg" alt="" class="mv-line">
+      <img src="img/mv-read.svg" alt="" class="mv-read">
     </section>
 
     <hr>
 
     <section class="main-dish">
-      <img src="img/cake.png" alt="">
+      <img src="img/cake.png" alt="" class="main-dish__cake">
       <div class="product-main">
-        <p>家族で楽しむ上質なおいしさ</p>
+        <p >家族で楽しむ上質なおいしさ</p>
         <h2>クリスマスケーキ</h2>
         <p>Oisixクリスマスの定番が今年も楽しめます！<br>
           上質な国産小麦でふんわり焼き上げたスポンジに、<br>

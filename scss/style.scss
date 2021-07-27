@@ -1,4 +1,75 @@
 @charset 'utf-8';
+@import 'variables';
+@import 'functions';
 @import 'custom'; //_custom.scssを読み込み
 
+// 共通
+hr {
+  margin: 0;
+  height: 8px;
+  background: rgb(221,194,100);
+  background: linear-gradient(90deg, rgba(221,194,100,1) 0%, rgba(237,218,152,1) 47%, rgba(181,161,91,1) 100%);
+  opacity: 1;
+}
 
+p, h2{
+  font-family: $main-font;
+  color: $xmas-brown;
+  padding: 0;
+  margin: 0;
+}
+
+//======================= MV=========================
+.main-visual {
+  background-color: $xmas-red;
+
+  .mv-picture {
+    // position: relative;
+    img {
+      width: 100%;
+      position: relative;
+    }
+  }
+
+  .mv-logo {
+    position: absolute;
+    top: 20%;
+    left: 32%;
+    width: 530px;
+  }
+
+  .mv-line {
+    position: absolute;
+    top: 75%;
+    left: 0;
+    width: 100%;
+  }
+
+  .mv-read {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 123px;
+  }
+
+}
+
+//  =====================Main Dish ===============================
+.main-dish {
+  position: relative;
+
+  &__cake {
+    width: 100%;
+  }
+
+  .product-main {
+    background-color: $snow-white;
+    border-radius: 38px;
+    position: absolute;
+    top: 20%;
+    right: 140px;
+    padding: 30px 24px;
+
+    p {
+    }
+  }
+}
