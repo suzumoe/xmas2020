@@ -92,22 +92,26 @@ p, h2{
     }
   }
 }
+.check-wrapper {
+  text-align: center;
+}
 
 .check-btn {
   background-color: $xmas-cream;
   border: 2px solid $xmas-brown;
   border-radius: 50px;
-  padding: 16px 26px;
+  padding: 12px 26px;
   display: inline-block;
 
-
- i {
-   font-size: $fz16;
-   color: $xmas-brown;
- }
-
+  i {
+    font-size: $fz16;
+    color: $xmas-brown;
+  }
 }
 
+.container {
+  margin: 0 auto;
+}
 
 //======================= MV=========================
 .main-visual {
@@ -148,7 +152,6 @@ p, h2{
 
   &__cake  {
     position: relative;
-
     &_img {
       width: 100%;
     }
@@ -159,7 +162,7 @@ p, h2{
     border-radius: 38px;
     position: absolute;
     top: 20%;
-    right: 140px;
+    right: 120px;
     padding: 30px 24px;
 
   }
@@ -172,14 +175,57 @@ p, h2{
       width: 100%;
     }
   }
+
+  .product-main2 {
+    background-color: $snow-white;
+    border-radius: 38px;
+    position: absolute;
+    top: 20%;
+    left: 120px;
+    padding: 30px 24px;
+
+  }
+
 }
 
 // ==================side dish =================
 .side-dish {
   background-color: rgba(1,42,34,.95);
   background-image: url('/img/bg-check.png');
+  padding-bottom: 66px;
 
-  img {
+  &__read_img {
+    margin: 0 auto;
+    display: block;
+    padding: 50px 0;
+  }
+
+  .card {
+    height: 100%;
+
+    .card-body {
+      padding: 30px 26px;
+    }
+  }
+}
+
+// =================appetizers==================
+.appetizers {
+  background-color: $xmas-blue;
+  background-image: url('/img/sparkle-1.svg');
+  padding-bottom: 66px;
+
+  .card {
+    height: 100%;
+  }
+
+  .product-detail {
+    &__title {
+      font-size: $fz20;
+    }
+  }
+
+  &__read_img {
     margin: 0 auto;
     display: block;
     padding: 50px 0;
