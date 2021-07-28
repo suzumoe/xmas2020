@@ -19,10 +19,21 @@ p, h2{
   margin: 0;
 }
 
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+.card {
+  border-radius: 11px;
+  background-color: $xmas-beige;
+  border: none;
+}
+
 // 商品紹介
 .product-detail {
   &__read {
     font-size: $fz16;
+    margin-bottom: 6px;
   }
   &__title {
     font-size: $fz26;
@@ -30,7 +41,8 @@ p, h2{
   }
   &__info {
     font-size: $fz14;
-    margin-bottom: 4px;
+    margin-bottom: 12px;
+    line-height: 1.5rem;
   }
   &__size {
     font-size: $fz14;
@@ -149,6 +161,26 @@ p, h2{
     right: 140px;
     padding: 30px 24px;
 
-    
+  }
+
+  // チキン
+  &__chicken {
+    position: relative;
+
+    &_img {
+      width: 100%;
+    }
+  }
+}
+
+// ==================side dish =================
+.side-dish {
+  background-color: rgba(1,42,34,.95);
+  background-image: url('/img/bg-check.png');
+
+  img {
+    margin: 0 auto;
+    display: block;
+    padding: 50px 0;
   }
 }
