@@ -20,14 +20,14 @@
   <main>
     <section class="main-visual">
 
-      <picture class="mv-picture">
+      <picture class="mv-picture overlay">
         <source srcset="img/mv-pc.png" media="(min-width:768px)">
         <source srcset="img/mv-sp.jpg">
         <img src="img/mv.png" alt="">
       </picture>
 
       <img src="img/mv-logo.svg" alt="" class="mv-logo">
-      <img src="img/mv-line.svg" alt="" class="mv-line">
+      <img src="img/mv2.svg" alt="" class="mv-line">
       <img src="img/mv-read.svg" alt="" class="mv-read">
     </section>
 
@@ -323,30 +323,85 @@
 
     <hr>
 
+    <!-- faq -->
     <section class="question">
-      <i class="far fa-question-circle">よくいただくご質問</i>
-    </section>
+      <div class="question__title">
+        <img src="img/question-circle-regular.svg" alt="">
+        <h2>よくいただくご質問</h2>
+      </div>
 
-    <hr class="footer-line">
+      <div class="container">
+        <div class="d-flex">
+          <img src="img/q-bg-right.svg" alt="" class="faq-img">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  12月24日に届いて欲しい。いつまでに注文すれば良いですか？
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  12月19日までにご注文いただけますと、12月24日にお届け可能です。
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  配達日時の指定はできますか？
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  日時を選択する場合はご注文画面に表示される希望日の中からお選び下さい。（お選びいただけない商品もございます）
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  注文をキャンセルしたいのですが、どうしたらよいですか？
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  マイページの「ご注文履歴」一覧の「詳細を見る」欄に、「キャンセル可」と表示している場合のみご注文をキャンセルできます。
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="img/q-bg-left.svg" alt="" class="faq-img">
+        </div>
+      </div>
+
+    </section>
 
   </main>
 
   <footer>
     <h3>Happy Holidays!</h3>
-    <p>Oisixで美味しく楽しいクリスマスをお楽しみ下さい！</p>
+    <p><span>Oisix</span>で美味しく楽しいクリスマスをお楽しみ下さい！</p>
     <p>＼ SNSでも美味しい＆便利な情報発信中 ／</p>
     <div class="social">
-      <i class="fab fa-twitter"></i>
-      <i class="fab fa-instagram"></i>
+      <a href="#"><i class="twitter fab fa-twitter"></i></a>
+      <a href=""><i class="instagram fab fa-instagram"></i></a>
     </div>
     <p>Follow me!</p>
 
-    <small>このwebページはsuzukiが作成した架空のページです。実際にご利用いただけません。</small>
+    <div class="attention text-start small">
+      <small>このwebページはsuzukiが作成した架空のページです。実際にご利用いただけません。</small>
+    </div>
   </footer>
 
 
-  <!-- bootstrap js -->
-  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- jquery -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+  <!-- snow -->
+  <script src="/js/snowfall.jquery.min.js"></script>
   <!-- my script -->
   <script src="js/script.js"></script>
 </body>
