@@ -28,6 +28,11 @@ hr {
   background-color: $xmas-beige;
   border: none;
 }
+@include media-breakpoint-down(sm) {
+  .col-sm-12 {
+    margin-bottom: 24px;
+  }
+}
 
 // 商品紹介
 .product-detail {
@@ -133,6 +138,12 @@ hr {
     top: 20%;
     left: 32%;
     width: 530px;
+
+    @include media-breakpoint-down(sm) {
+      width: 250px;
+      top: 20%;
+      left: 20%;
+    }
   }
 
   .mv-line {
@@ -140,12 +151,20 @@ hr {
     top: 90%;
     left: 0;
     width: 100%;
+    @include media-breakpoint-down(sm) {
+      top: 75%;
+      
+    }
   }
 
   .mv-read {
     display: block;
     margin: 0 auto;
     padding: 100px 0 120px 0;
+    @include media-breakpoint-down(sm) {
+      padding: 80px 0;
+      width: 85%;
+    }
   }
 
 }
@@ -167,6 +186,11 @@ hr {
     top: 20%;
     right: 120px;
     padding: 30px 24px;
+    @include media-breakpoint-down(sm) {
+      position: static;
+      background-color: $xmas-beige;
+      border-radius: 0;
+    }
 
   }
 
@@ -186,6 +210,11 @@ hr {
     top: 20%;
     left: 120px;
     padding: 30px 24px;
+    @include media-breakpoint-down(sm) {
+      position: static;
+      background-color: $xmas-beige;
+      border-radius: 0;
+    }
 
   }
 
@@ -194,13 +223,16 @@ hr {
 // ==================side dish =================
 .side-dish {
   background-color: rgba(1,42,34,.95);
-  background-image: url('/img/bg-check.png');
+  background-image: url("/img/bg-check.png");
   padding-bottom: 66px;
 
   &__read_img {
     margin: 0 auto;
     display: block;
     padding: 50px 0;
+    @include media-breakpoint-down(sm) {
+      width: 85%;
+    }
   }
 
   .card {
@@ -215,7 +247,7 @@ hr {
 // =================appetizers==================
 .appetizers {
   background-color: $xmas-blue;
-  background-image: url('/img/sparkle-1.svg');
+  background-image: url("/img/sparkle-1.svg");
   padding-bottom: 66px;
 
   .card {
@@ -232,13 +264,15 @@ hr {
     margin: 0 auto;
     display: block;
     padding: 50px 0;
+    @include media-breakpoint-down(sm) {
+      width: 85%;
+    }
   }
 }
 
 // =========== Q&A ========================
 .question {
   background-color: $xmas-cream;
-  // background-image: url('/img/q-bg-left.svg');
   padding-bottom: 200px;
 
   &__title {
@@ -261,12 +295,16 @@ hr {
     width: 50%;
     margin: 0 auto;
 
+    @include media-breakpoint-down(sm) {
+      width: 90%;
+    }
+
     &-button {
       background-color: $xmas-brown;
       color: $xmas-cream;
 
       &::after {
-        background-image: url('/img/arrow-down.svg');
+        background-image: url("/img/arrow-down.svg");
       }
 
       &:focus {
@@ -280,8 +318,26 @@ hr {
     }
   }
 
-  .faq-img {
+  .faq-wrapper {
+    display: flex;
+
+    .santa {
+      display: none;
+    }
+    @include media-breakpoint-down(sm) {
+      display: block;
+      .q-bg {
+        display: none;
+      }
+      .santa {
+        display: block;
+        text-align: center;
+        padding-top: 40px;
+      }
+    }
   }
+
+  
 }
 
 // ============footer =======================
@@ -291,14 +347,14 @@ footer {
   color: $xmas-cream;
   text-align: center;
   padding-top: 80px;
-  &:before {
+  &::before {
     position: absolute;
     content: '';
     display: block;
     height: 100%;
     width: 100%;
     top: -145px;
-    background-image: url('/img/footer-line.svg');
+    background-image: url("/img/footer-line.svg");
     background-repeat: repeat-x;
   }
 
@@ -311,10 +367,24 @@ footer {
     position: absolute;
     left: 350px;
     top: 56px;
+    @include media-breakpoint-down(sm) {
+      left: 20px;
+      top: 60px;
+      font-size: $fz20;
+    }
   }
 
   p {
     font-size: $fz20;
+    @include media-breakpoint-down(sm) {
+     font-size: $fz14; 
+    }
+    br {
+      display: none;
+      @include media-breakpoint-down(sm) {
+        display: inline;
+      }
+    }
 
     &:first-child {
       position: relative;
@@ -324,6 +394,9 @@ footer {
       font-weight: 700;
       font-style: italic;
       font-size: $fz30;
+      @include media-breakpoint-down(sm) {
+        font-size: $fz20; 
+       }
     }
   }
 

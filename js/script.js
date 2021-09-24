@@ -4,7 +4,7 @@ $(function(){
   $(".main-visual").snowfall(
     {
         // 雪の量 (数値)
-        flakeCount : 120,
+        flakeCount : 160,
         // 色 (RGB)
         // flakeColor : "",
         // z-indexの値
@@ -22,7 +22,7 @@ $(function(){
         // 影をつける（boolean）
         shadow : false,
         // 要素に積もらせる場合
-        collection : "積もらせる要素",
+        // collection : "積もらせる要素"
         // オリジナル画像を使用する場合
         // image : "画像へのパス"
     }

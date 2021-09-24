@@ -11,6 +11,8 @@
     referrerpolicy="no-referrer" />
   <!-- adobe font -->
   <link rel="stylesheet" href="https://use.typekit.net/xkh1elt.css">
+  <!-- icon -->
+  <link rel="icon" href="img/favicon.ico">
   <!-- my style -->
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -20,7 +22,7 @@
   <main>
     <section class="main-visual">
 
-      <picture class="mv-picture overlay">
+      <picture class="mv-picture">
         <source srcset="img/mv-pc.png" media="(min-width:768px)">
         <source srcset="img/mv-sp.jpg">
         <img src="img/mv.png" alt="">
@@ -331,8 +333,8 @@
       </div>
 
       <div class="container">
-        <div class="d-flex">
-          <img src="img/q-bg-right.svg" alt="" class="faq-img">
+        <div class="faq-wrapper">
+          <img src="img/q-bg-right.svg" alt="" class="q-bg">
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
@@ -371,7 +373,10 @@
               </div>
             </div>
           </div>
-          <img src="img/q-bg-left.svg" alt="" class="faq-img">
+          <img src="img/q-bg-left.svg" alt="" class="q-bg">
+          <div class="santa">
+            <img src="img/sp-question-bg.svg" alt="" class="q-bg-left">
+          </div>
         </div>
       </div>
 
@@ -381,7 +386,7 @@
 
   <footer>
     <h3>Happy Holidays!</h3>
-    <p><span>Oisix</span>で美味しく楽しいクリスマスをお楽しみ下さい！</p>
+    <p><span>Oisix</span>で<br>美味しく楽しいクリスマスをお楽しみ下さい！</p>
     <p>＼ SNSでも美味しい＆便利な情報発信中 ／</p>
     <div class="social">
       <a href="#"><i class="twitter fab fa-twitter"></i></a>
@@ -389,21 +394,21 @@
     </div>
     <p>Follow me!</p>
 
-    <div class="attention text-start small">
+    <div class="attention text-start small container">
       <small>このwebページはsuzukiが作成した架空のページです。実際にご利用いただけません。</small>
     </div>
   </footer>
 
 
   <!-- jquery -->
-  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="/js/jquery-3.6.0.min.js"></script>
     <!-- bootstrap js -->
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
 
   <!-- snow -->
   <script src="/js/snowfall.jquery.min.js"></script>
   <!-- my script -->
-  <script src="js/script.js"></script>
+  <script src="/js/script.js"></script>
 </body>
 
 </html>
