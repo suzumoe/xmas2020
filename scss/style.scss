@@ -223,7 +223,7 @@ hr {
 // ==================side dish =================
 .side-dish {
   background-color: rgba(1,42,34,.95);
-  background-image: url("/img/bg-check.png");
+  background-image: url("../img/bg-check.png");
   padding-bottom: 66px;
 
   &__read_img {
@@ -247,7 +247,7 @@ hr {
 // =================appetizers==================
 .appetizers {
   background-color: $xmas-blue;
-  background-image: url("/img/sparkle-1.svg");
+  background-image: url("../img/sparkle-1.svg");
   padding-bottom: 66px;
 
   .card {
@@ -304,7 +304,7 @@ hr {
       color: $xmas-cream;
 
       &::after {
-        background-image: url("/img/arrow-down.svg");
+        background-image: url("../img/arrow-down.svg");
       }
 
       &:focus {
@@ -354,7 +354,7 @@ footer {
     height: 100%;
     width: 100%;
     top: -145px;
-    background-image: url("/img/footer-line.svg");
+    background-image: url("../img/footer-line.svg");
     background-repeat: repeat-x;
   }
 
